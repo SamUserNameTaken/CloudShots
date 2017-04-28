@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
-import TableData from './table-data';
+import TableData from './table_data';
+import { fetchList } from '../actions'
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 class Grid extends Component {
+	componentDidMount(){
+		this.props.fetchList()
+	}
 	render() {
+		console.log(this.props)
 		return (
 			<div className="container">
 				<table className="table">
@@ -24,4 +31,8 @@ class Grid extends Component {
 	}
 }
 
-export default Grid;
+function mapStateToProps(state) {
+	return { list: state.lists.all }
+}
+
+export default connect(mapStateToProps, { fetchList })(Grid);
