@@ -8,6 +8,11 @@ class Grid extends Component {
 	componentDidMount(){
 		this.props.fetchList()
 	}
+	renderTables() {
+		return this.props.list.map((items) => {
+			return <TableData tdata={items} />
+		})
+	}
 	render() {
 		console.log(this.props)
 		return (
@@ -20,10 +25,7 @@ class Grid extends Component {
 							<th>Failure</th>
 							<th>Difference</th>
 						</tr>
-						<TableData />
-						<TableData />
-						<TableData />
-						<TableData />
+						{this.renderTables()}
 					</tbody>
 				</table>
 			</div>
