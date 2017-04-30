@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #222;
   height: 100px;
@@ -17,15 +16,25 @@
 .App-bar {
   background-color: green;
   height: 90px;
-
-}
-
-td, th {
-	border: 1px solid #ddd;
-	text-align: left;
-	padding: 8px;
 }
 
 th {
-	background-color: #ddd;
+	background-color: #eee;
+}
+
+img {
+  max-width: 100%;
+  border: 3px solid #ddd;
+}
+
+.row-desc {
+  width: 30%;
+  height: 200px;
+  /*vertical-align: middle !important;*/
+  text-align: left;
+}
+
+.table-btn {
+  width: 15%;
+  vertical-align: middle !important;
 }

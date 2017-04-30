@@ -2,17 +2,17 @@ import React from 'react';
 
 const TableData = (props) => (
 	<tr>
-		<td>
+		<td className="row-desc">
 			<div>
-				<p><strong>Class:</strong> {props.tdata.category}</p>
-				<p><strong>Test:</strong> {props.tdata.pid}</p>
-				<p><strong>Scenario:</strong> {props.tdata.location}</p>
+				<p><strong>Class:</strong> qwlekjqw eiqjweoiqwejlkqwje lqkwejqwoie{props.tdata.category}</p>
+				<p><strong>Test:</strong> lqjwelkqjwe lkqjwe{props.tdata.pid}</p>
+				<p><strong>Scenario:</strong> qlkwejqklwe jklqwej{props.tdata.location}</p>
 			</div>
 		</td>
-		<td>hi</td>
-		<td>hi</td>
-		<td>hi</td>
-		<td><button className="btn btn-primary" onClick={() => {console.log(props.tdata)}}>remove</button></td>
+		<td><img className="img-fluid" src="./images/pic1.png" alt="uh ya"/></td>
+		<td><img className="img-fluid" src="./images/pic1.png" alt="uh ya"/></td>
+		<td><img className="img-fluid" src="./images/pic1.png" alt="uh ya"/></td>
+		<td className="table-btn"><button className="btn btn-primary" onClick={() => {console.log(props.tdata)}}>remove</button></td>
 	</tr>
 )
 
